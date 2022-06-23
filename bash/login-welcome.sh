@@ -17,15 +17,15 @@
 ###############
 # Variables   #
 ###############
-title="Overlord"
+title="The great"
 myname="dennis"
-hostname="myhostname"
-
+hostname="virtual"
+user="Krisha"
 ###############
 # Main        #
 ###############
 cat <<EOF
 
-Welcome to planet $hostname, "$title $myname!"
+Welcome to the $hostname planet of, "$title $user!"
 
 EOF
