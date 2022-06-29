@@ -17,15 +17,17 @@
 ###############
 # Variables   #
 ###############
-title="The great"
+title="Overlord"
 myname="dennis"
-hostname="virtual"
 user="Krisha"
+hostname="$(hostname)"
+time=$(date +%H:%M)
 ###############
 # Main        #
 ###############
 cat <<EOF
 
-Welcome to the $hostname planet of, "$title $user!"
+Welcome to planet $hostname, "$title $user!"
+It's a weekday at $time AM
 
 EOF
