@@ -1,0 +1,23 @@
+param([string]$System, [string]$Disk, [string]$Network)
+
+if($System -eq "System") {
+	ProcessorDetail
+	OperatingSystem
+	PhysicalMemmory
+	VideoController
+}
+elseif($Disk -eq "Disk") {
+	SystemDisk
+}
+elseif($Network -eq "Network") {
+	NetworkAdapter
+}
+else {
+	ComputerSystem
+	OperatingSystem
+	ProcessorDetail
+	PhysicalMemmory
+	SystemDisk
+	NetworkAdapter
+	VideoController
+}
